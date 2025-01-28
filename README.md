@@ -11,11 +11,9 @@ my-express-api
 │   ├── controllers          # Contains controller files
 │   │   └── index.js        # Controller for handling API requests
 │   ├── routes               # Contains route definitions
-│   │   └── index.js        # Route definitions for the application
-│   └── models               # Contains model definitions
-│       └── index.js        # Model for database schema or data structure
+│    └── app.js        # Route definitions for the application
+├── db.json             # Database file
 ├── package.json             # NPM configuration file
-├── .env                     # Environment variables
 └── README.md                # Project documentation
 ```
 
@@ -28,7 +26,7 @@ my-express-api
 
 2. Navigate to the project directory:
    ```
-   cd my-express-api
+   cd devtalks-backend
    ```
 
 3. Install the dependencies:
@@ -38,20 +36,14 @@ my-express-api
 
 ## Usage
 
-1. Create a `.env` file in the root directory and add your environment variables.
+1. Execute "npm run start:db" to start database server,
 
-2. Start the application:
-   ```
-   npm start
-   ```
+2. Execute "npm start" to start application
 
-3. Access the API at `http://localhost:3000`.
 
 ## API Endpoints
 
-- `GET /items` - Retrieve a list of items
-- `POST /items` - Create a new item
-
-## Contributing
-
-Feel free to submit issues or pull requests for improvements or bug fixes.
+- `GET /carrinho` - Product list in cart
+- `POST /carrinho` - Add new item to cart
+- `POST /carrinho/clear` - Clear items from cart
+- `Delete /carrinho/:id` - Remove custom item from cart
