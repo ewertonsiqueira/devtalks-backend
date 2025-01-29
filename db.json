@@ -1,5 +1,27 @@
 {
-  "carrinho": [],
+  "carrinho": [
+    {
+      "id": "e001",
+      "name": "Fazer 250",
+      "description": "Moto Brunin",
+      "value": 20000,
+      "image": "../../shared/assets/fz.jpg"
+    },
+    {
+      "id": "e004",
+      "name": "Civicão",
+      "description": "Carro Moço",
+      "value": 64000,
+      "image": "../../shared/assets/civic.png"
+    },
+    {
+      "id": "e003",
+      "name": "Gol",
+      "description": "Carro Léo",
+      "value": 50000,
+      "image": "../../shared/assets/gol.jpg"
+    }
+  ],
   "estoque": [
     {
       "id": "e001",
